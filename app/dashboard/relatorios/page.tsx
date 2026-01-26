@@ -57,8 +57,8 @@ export default async function RelatoriosPage() {
   const servicosCount: Record<string, { nome: string; count: number }> = {};
   servicosRealizados?.forEach(item => {
     const nome = Array.isArray(item.servicos)
-      ? (item.servicos[0]?.nome || "Sem serviço")
-      : (item.servicos?.nome || "Sem serviço");
+      ? ((item.servicos as { nome?: string }[])[0]?.nome || "Sem serviço")
+      : ((item.servicos as { nome?: string } | undefined)?.nome || "Sem serviço");
     if (!servicosCount[nome]) {
       servicosCount[nome] = { nome, count: 0 };
     }
