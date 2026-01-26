@@ -174,7 +174,9 @@ export default function AgendamentosPage() {
                         </div>
                         <div>
                           <p className="text-xs text-slate-400">Cliente</p>
-                          <p className="font-medium text-white">{agendamento.clientes?.nome || "N/A"}</p>
+                          <p className="font-medium text-white">{Array.isArray(agendamento.clientes)
+                            ? (agendamento.clientes[0]?.nome || "N/A")
+                            : (agendamento.clientes?.nome || "N/A")}</p>
                         </div>
                       </div>
                       
