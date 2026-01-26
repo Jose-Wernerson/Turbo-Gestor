@@ -70,7 +70,7 @@ export function Sidebar({ mobileOpen, onClose }: { mobileOpen?: boolean; onClose
         {/* Logo */}
         <div className="flex h-16 items-center gap-3 border-b px-6">
           <Image 
-            src="/logo.webp" 
+            src="/logo.png" 
             alt="Turbo Gestor" 
             width={32} 
             height={32}

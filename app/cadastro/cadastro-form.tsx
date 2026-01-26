@@ -121,7 +121,7 @@ export function CadastroForm() {
       <div className="mb-8 text-center">
         <div className="flex items-center justify-center gap-3 mb-4">
           <Image 
-            src="/logo.webp" 
+            src="/logo.png" 
             alt="Turbo Gestor" 
             width={48} 
             height={48}

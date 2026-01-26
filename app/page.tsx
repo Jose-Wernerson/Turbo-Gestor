@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* Header */}
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Image src="/logo.webp" alt="Turbo Gestor" width={40} height={40} />
+          <Image src="/logo.png" alt="Turbo Gestor" width={40} height={40} />
           <span className="text-2xl font-bold">Turbo Gestor</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">
@@ -262,7 +262,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <Image src="/logo.webp" alt="Turbo Gestor" width={32} height={32} />
+              <Image src="/logo.png" alt="Turbo Gestor" width={32} height={32} />
               <span className="font-semibold">Turbo Gestor</span>
             </div>
             <p className="text-gray-400 text-sm">

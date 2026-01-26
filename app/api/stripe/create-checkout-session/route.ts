@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
             product_data: {
               name: `Turbo Gestor - Plano ${plano.charAt(0).toUpperCase() + plano.slice(1)}`,
               description: `Assinatura mensal do plano ${plano}`,
-              images: [`${process.env.NEXT_PUBLIC_APP_URL}/logo.webp`],
+              images: [`${process.env.NEXT_PUBLIC_APP_URL}/logo.png`],
             },
             unit_amount: precos[plano],
             recurring: {

@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Turbo Gestor" }],
   icons: {
     icon: [
-      { url: "/logo.webp", sizes: "32x32", type: "image/webp" },
-      { url: "/logo.webp", sizes: "192x192", type: "image/webp" },
+      { url: "/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo.png", sizes: "192x192", type: "image/png" },
     ],
-    shortcut: "/logo.webp",
+    shortcut: "/logo.png",
     apple: [
-      { url: "/logo.webp", sizes: "180x180", type: "image/webp" },
+      { url: "/logo.png", sizes: "180x180", type: "image/png" },
     ],
   },
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: appUrl,
     images: [
       {
-        url: "/logo.webp",
+        url: "/logo.png",
         width: 800,
         height: 800,
         alt: "Turbo Gestor Logo",
