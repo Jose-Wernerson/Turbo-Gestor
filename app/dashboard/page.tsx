@@ -176,8 +176,8 @@ export default async function DashboardPage() {
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-white truncate">
                       {Array.isArray(agendamento.clientes)
-                        ? (agendamento.clientes[0]?.nome || "Cliente")
-                        : (agendamento.clientes?.nome || "Cliente")}
+                        ? ((agendamento.clientes as { nome?: string }[])[0]?.nome || "Cliente")
+                        : ((agendamento.clientes as { nome?: string } | undefined)?.nome || "Cliente")}
                     </p>
                     <p className="text-xs text-slate-400">
                       {agendamento.observacoes || "Serviço agendado"}
