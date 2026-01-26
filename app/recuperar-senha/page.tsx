@@ -36,7 +36,7 @@ export default function RecuperarSenhaPage() {
 
     try {
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/redefinir-senha`,
+        redirectTo: `${process.env.NEXT_PUBLIC_APP_URL || window.location.origin}/redefinir-senha`,
       });
 
       if (error) {
