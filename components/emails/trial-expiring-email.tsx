@@ -19,7 +19,7 @@ interface TrialExpiringEmailProps {
 export const TrialExpiringEmail = ({ nome, diasRestantes }: TrialExpiringEmailProps) => (
   <Html>
     <Head />
-    <Preview>Seu período de teste expira em {diasRestantes} {diasRestantes === 1 ? 'dia' : 'dias'}! ⏰</Preview>
+    <Preview>Seu período de teste expira em {String(diasRestantes)} {diasRestantes === 1 ? 'dia' : 'dias'}! ⏰</Preview>
     <Body style={main}>
       <Container style={container}>
         <Heading style={h1}>⏰ Seu teste está acabando!</Heading>
