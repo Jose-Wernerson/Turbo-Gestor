@@ -98,8 +98,7 @@ const ToastTitle = React.forwardRef<
     {...props}
   />
 ));
-ToastTitle.displayName = ToastPrimitive.Title.displayName; &
-  VariantProps<typeof toastVariants>
+ToastTitle.displayName = ToastPrimitive.Title.displayName;
 
 const ToastDescription = React.forwardRef<
   React.ElementRef<typeof ToastPrimitive.Description>,
@@ -113,7 +112,8 @@ const ToastDescription = React.forwardRef<
 ));
 ToastDescription.displayName = ToastPrimitive.Description.displayName;
 
-type ToastProps = React.ComponentPropsWithoutRef<typeof Toast>;
+type ToastProps = React.ComponentPropsWithoutRef<typeof Toast> &
+  VariantProps<typeof toastVariants>;
 
 type ToastActionElement = React.ReactElement<typeof ToastAction>;
 
